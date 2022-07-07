@@ -1,6 +1,6 @@
 <hr>
 <footer>
-  <p class='text-center' style='height:3rem'><a href='index.php'>Kelp <?php echo date("Y");?></a></p>
+  <p class='text-center'><a href='index.php'>Kastor <?php echo date("Y");?></a></p>
 </footer>
 </body>
 </html>

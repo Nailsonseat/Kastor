@@ -36,8 +36,9 @@ DROP TABLE IF EXISTS `users`;
 
 CREATE TABLE `users` (
   `user_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `user_name` varchar(50) NOT NULL DEFAULT '',
-  `user_full_name` varchar(150) NOT NULL DEFAULT '',
+  `user_uname` varchar(50) NOT NULL DEFAULT '',
+  `user_fname` varchar(50) NOT NULL DEFAULT '',
+  `user_lname` varchar(50) NOT NULL DEFAULT '',
   `user_email` varchar(255) NOT NULL DEFAULT '',
   `user_password` varchar(255) NOT NULL DEFAULT '',
   `user_role` int(11) NOT NULL,
@@ -49,8 +50,8 @@ LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` (`user_id`, `user_name`, `user_full_name`, `user_email`, `user_password`, `user_role`)
 VALUES
-  (1,'admin','Admin','admin@admin.com','admin',1),
-  (2,'test','Test','test@test.com','test',2);
+  (1,'admin','aadarsh','verma','admin@admin.com','admin',1),
+  (2,'test','dummy','dummy','test@test.com','test',2);
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
